@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Halal dan Haram – PAI Kelas 6</title>
+<style>
+:root{--bg:#f4f8f3;--card:#fff;--ink:#1d2b24;--mut:#5b6b62;--pri:#1f7a4d;--pri2:#e3f3ea;--ok:#1f7a4d;--okbg:#dff3e6;--no:#b3261e;--nobg:#fbe4e2;--line:#d5e2d9;--gold:#b7791f;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101a15;--card:#18261e;--ink:#e8f1ec;--mut:#9db0a5;--pri:#4cc38a;--pri2:#1d3a2b;--ok:#5ed39a;--okbg:#17382a;--no:#ff8a80;--nobg:#401b19;--line:#2b4136;--gold:#e5b567}}
+:root[data-theme="dark"]{--bg:#101a15;--card:#18261e;--ink:#e8f1ec;--mut:#9db0a5;--pri:#4cc38a;--pri2:#1d3a2b;--ok:#5ed39a;--okbg:#17382a;--no:#ff8a80;--nobg:#401b19;--line:#2b4136;--gold:#e5b567}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+.wrap{max-width:760px;margin:0 auto;padding:16px}
+header{text-align:center;padding:12px 0 4px}
+header .tag{display:inline-block;background:var(--pri2);color:var(--pri);padding:2px 12px;border-radius:99px;font-size:13px;font-weight:600}
+h1{margin:8px 0 2px;font-size:clamp(24px,6vw,34px)}
+header p{margin:0;color:var(--mut)}
+nav{display:flex;gap:6px;margin:16px 0;overflow-x:auto}
+nav button{flex:1;min-width:max-content;padding:10px 14px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;font:inherit;font-weight:600;cursor:pointer}
+nav button.on{background:var(--pri);color:#fff;border-color:var(--pri)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:12px}
+.card h2,.card h3{margin:0 0 6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.halal{border-left:6px solid var(--ok)}.haram{border-left:6px solid var(--no)}
+.dalil{background:var(--pri2);border-radius:12px;padding:10px 12px;margin-top:8px;font-size:15px}
+.dalil b{color:var(--pri)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-bottom:8px}
+summary{cursor:pointer;font-weight:600}
+ul{margin:6px 0;padding-left:20px}
+.btn{padding:12px 18px;border-radius:12px;border:0;font:inherit;font-weight:700;cursor:pointer;color:#fff;background:var(--pri)}
+.btn.h{background:var(--ok)}.btn.x{background:var(--no)}
+.btn.ghost{background:transparent;color:var(--pri);border:1px solid var(--pri)}
+.row{display:flex;gap:10px;flex-wrap:wrap}.row .btn{flex:1}
+.big{font-size:clamp(22px,6vw,30px);text-align:center;padding:22px 8px;font-weight:700}
+.bar{height:8px;background:var(--line);border-radius:9px;overflow:hidden;margin-bottom:12px}
+.bar i{display:block;height:100%;background:var(--pri);transition:width .3s}
+.fb{margin-top:12px;padding:12px;border-radius:12px;font-size:15px}
+.fb.ok{background:var(--okbg);color:var(--ok)}.fb.no{background:var(--nobg);color:var(--no)}
+.opt{display:block;width:100%;text-align:left;margin-bottom:8px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--pri)}
+.opt.c{background:var(--okbg);border-color:var(--ok)}.opt.w{background:var(--nobg);border-color:var(--no)}
+.score{text-align:center}.score .n{font-size:56px;font-weight:800;color:var(--pri)}
+textarea{width:100%;min-height:70px;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.hide{display:none}
+body{background-image:radial-gradient(circle at 8% 0,var(--pri2),transparent 42%),radial-gradient(circle at 100% 35%,var(--okbg),transparent 38%);background-attachment:fixed}
+.card{box-shadow:0 4px 14px rgba(0,0,0,.07)}
+.hero{border-radius:24px;overflow:hidden;background:linear-gradient(165deg,#0c5434,#1f9a62 62%,#e3b94d 150%);color:#fff;text-align:center;padding:20px 12px 0;margin-top:8px;box-shadow:0 8px 24px rgba(15,92,58,.35)}
+.hero h1{color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.25)}
+.hero p{color:#e8fff1}
+.hero .tag{background:rgba(255,255,255,.2);color:#fff}
+.hero svg{display:block;width:100%;height:auto;margin-top:8px}
+.tw{animation:tw 2.4s infinite alternate}@keyframes tw{from{opacity:.3}to{opacity:1}}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(86px,1fr));gap:8px;margin:6px 0 10px}
+.tile{border-radius:18px;padding:10px 4px;text-align:center;font-weight:700;font-size:13px;transition:transform .2s}
+.tile span{display:block;font-size:40px;line-height:1.2}
+.tile.ok{background:var(--okbg);color:var(--ok);border:2px solid var(--ok)}
+.tile.no{background:var(--nobg);color:var(--no);border:2px solid var(--no)}
+.tile:hover{transform:translateY(-4px) rotate(-3deg)}
+.sec{font-weight:800;margin:14px 0 4px}
+.big .em{display:block;font-size:92px;line-height:1.1;animation:pop .45s}
+.fb{animation:pop .35s}
+@keyframes pop{from{transform:scale(.5);opacity:0}to{transform:scale(1);opacity:1}}
+.halal h2,.haram h2{font-size:24px}
+.btn{box-shadow:0 3px 0 rgba(0,0,0,.2);transition:transform .1s}.btn:active{transform:translateY(2px)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero"><span class="tag">PAI · Kelas 6</span><h1>Halal dan Haram</h1><p>Belajar memilih yang diperbolehkan dalam Islam</p>
+<svg viewBox="0 0 400 150" role="img" aria-label="Ilustrasi masjid dan bulan sabit"><g fill="#fff"><path class="tw" d="M40 30l3 7 7 1-5 5 1 7-6-4-6 4 1-7-5-5 7-1z"/><path class="tw" d="M350 20l2 5 5 1-4 3 1 5-4-3-4 3 1-5-4-3 5-1z"/><path class="tw" d="M300 70l2 4 4 1-3 3 1 4-4-2-3 2 1-4-3-3 4-1z"/><path class="tw" d="M95 75l2 4 4 1-3 3 1 4-4-2-3 2 1-4-3-3 4-1z"/></g>
+<circle cx="330" cy="45" r="20" fill="#ffe08a"/><circle cx="338" cy="39" r="18" fill="#17895a"/>
+<g fill="#0a3f28"><rect x="0" y="128" width="400" height="22"/><rect x="110" y="92" width="180" height="40"/><path d="M130 92a70 60 0 0 1 140 0z"/><rect x="198" y="38" width="4" height="16"/><path d="M200 36a5 5 0 1 1 0 .1z"/><rect x="60" y="60" width="22" height="70"/><path d="M60 60l11-26 11 26z"/><rect x="318" y="60" width="22" height="70"/><path d="M318 60l11-26 11 26z"/></g>
+<g fill="#ffe08a"><circle cx="71" cy="31" r="3"/><circle cx="329" cy="31" r="3"/><path d="M150 130v-18a14 14 0 0 1 28 0v18zM222 130v-18a14 14 0 0 1 28 0v18z"/><path d="M192 130v-14a8 8 0 0 1 16 0v14z"/></g></svg></header>
+<nav id="nav"></nav>
+
+<!-- MATERI -->
+<section id="materi">
+<div class="grid">
+<div class="card halal"><h2>✅ Halal</h2><p>Halal artinya <b>boleh</b> dilakukan, dimakan, atau digunakan menurut aturan Islam.</p><p style="margin:0;color:var(--mut)">Contoh: nasi, sayur, buah, ikan, ayam yang disembelih dengan menyebut nama Allah.</p></div>
+<div class="card haram"><h2>⛔ Haram</h2><p>Haram artinya <b>dilarang</b> dalam Islam. Orang yang menjauhinya akan mendapat pahala.</p><p style="margin:0;color:var(--mut)">Contoh: babi, bangkai, darah, minuman keras, mencuri.</p></div>
+</div>
+<div class="sec" style="color:var(--ok)">✅ Contoh yang halal</div>
+<div class="tiles"><div class="tile ok"><span>🍚</span>Nasi</div><div class="tile ok"><span>🍎</span>Buah</div><div class="tile ok"><span>🐟</span>Ikan</div><div class="tile ok"><span>🥛</span>Susu</div><div class="tile ok"><span>🥕</span>Sayur</div><div class="tile ok"><span>🍗</span>Ayam sembelihan</div></div>
+<div class="sec" style="color:var(--no)">⛔ Contoh yang haram</div>
+<div class="tiles"><div class="tile no"><span>🐖</span>Babi</div><div class="tile no"><span>🍺</span>Khamr</div><div class="tile no"><span>🩸</span>Darah</div><div class="tile no"><span>🥀</span>Bangkai</div><div class="tile no"><span>💰</span>Hasil mencuri</div></div>
+<div class="card"><h3>🌿 Halal saja belum cukup, harus thayyib</h3>
+<p style="margin:0">Thayyib artinya baik, bersih, bergizi, dan tidak membahayakan tubuh. Makanan yang kita pilih sebaiknya halal <b>dan</b> thayyib.</p>
+<div class="dalil"><b>QS. Al-Baqarah ayat 168:</b> Allah memerintahkan manusia makan dari yang halal lagi baik di bumi dan tidak mengikuti langkah-langkah setan.</div></div>
+<h3 style="margin:16px 0 8px">Ketuk untuk membuka 👇</h3>
+<details><summary>1. Makanan dan minuman yang haram</summary>
+<ul><li>Bangkai (hewan mati bukan karena disembelih)</li><li>Darah yang mengalir</li><li>Daging babi</li><li>Hewan yang disembelih bukan atas nama Allah</li><li>Khamr (minuman keras) dan segala yang memabukkan</li></ul>
+<div class="dalil"><b>Dalil:</b> QS. Al-Ma’idah ayat 3 dan ayat 90.</div></details>
+<details><summary>2. Haram karena zatnya dan karena cara mendapatkannya</summary>
+<p><b>Haram zatnya:</b> bendanya memang dilarang, misalnya daging babi dan khamr.</p>
+<p><b>Haram cara memperolehnya:</b> bendanya halal, tetapi didapat dengan cara salah, misalnya mencuri, korupsi, menipu, dan riba. Nasi yang dibeli dengan uang hasil mencuri menjadi haram.</p></details>
+<details><summary>3. Syubhat (belum jelas)</summary>
+<p>Syubhat adalah hal yang belum jelas halal atau haramnya. Sikap terbaik: berhati-hati, bertanya kepada guru atau orang tua, dan membaca label halal pada kemasan.</p></details>
+<details><summary>4. Manfaat memilih yang halal</summary>
+<ul><li>Hati menjadi tenang dan hidup berkah</li><li>Tubuh lebih sehat</li><li>Doa lebih mudah dikabulkan</li><li>Taat kepada perintah Allah</li></ul></details>
+<details><summary>5. Tips cerdas memilih makanan kemasan</summary>
+<ul><li>Cari logo halal resmi di kemasan</li><li>Baca daftar bahan dan tanggal kedaluwarsa</li><li>Jajan di tempat yang bersih</li><li>Biasakan membaca basmalah sebelum makan</li></ul></details>
+</section>
+
+<!-- GAME -->
+<section id="game" class="hide"></section>
+<!-- KUIS -->
+<section id="kuis" class="hide"></section>
+<!-- REFLEKSI -->
+<section id="refleksi" class="hide">
+<div class="card"><h3>📝 Refleksi Diri</h3>
+<p>Tuliskan jawabanmu (hanya tampil di layarmu).</p>
+<p><b>1.</b> Makanan halal apa yang paling sering kamu makan?</p><textarea></textarea>
+<p><b>2.</b> Apa yang akan kamu lakukan jika temanmu mengajak membeli jajanan yang tidak jelas kehalalannya?</p><textarea></textarea>
+<p><b>3.</b> Bagaimana cara kamu mengajak keluarga selalu memilih yang halal dan thayyib?</p><textarea></textarea>
+<div class="dalil" style="margin-top:12px">Ingat: makan dan minumlah dari yang halal lagi baik, dan jauhi yang haram. Semoga kita menjadi anak yang saleh dan salehah. Aamiin 🤲</div></div>
+</section>
+</div>
+
+<script>
+var tabs=[["materi","📖 Materi"],["game","🎮 Sortir Kartu"],["kuis","❓ Kuis"],["refleksi","📝 Refleksi"]];
+var nav=document.getElementById("nav");
+function show(id){tabs.forEach(function(t){document.getElementById(t[0]).classList.toggle("hide",t[0]!==id)});
+[].forEach.call(nav.children,function(b){b.classList.toggle("on",b.dataset.id===id)});window.scrollTo(0,0)}
+tabs.forEach(function(t){var b=document.createElement("button");b.textContent=t[1];b.dataset.id=t[0];b.onclick=function(){show(t[0])};nav.appendChild(b)});
+
+/* Sortir Kartu */
+var items=[
+["🍚 Nasi putih",1,"Nasi adalah makanan halal dan thayyib."],
+["🐖 Daging babi",0,"Daging babi haram karena zatnya (QS. Al-Ma’idah: 3)."],
+["🐟 Ikan segar",1,"Ikan halal, baik yang hidup maupun sudah mati."],
+["🥩 Bangkai ayam",0,"Bangkai haram karena hewan tidak disembelih secara syar’i."],
+["🧃 Jus jeruk",1,"Jus buah halal dan menyehatkan."],
+["🍺 Minuman keras",0,"Khamr haram karena memabukkan dan merusak akal."],
+["💰 Uang hasil mencuri",0,"Haram karena cara mendapatkannya salah."],
+["🛒 Uang hasil berdagang jujur",1,"Halal karena didapat dengan cara yang benar."],
+["🍗 Ayam yang disembelih membaca bismillah",1,"Halal karena disembelih sesuai aturan Islam."],
+["🩸 Darah hewan",0,"Darah yang mengalir termasuk yang diharamkan."]];
+var gi=0,gs=0,ga=false,G=document.getElementById("game");
+function game(){
+if(gi>=items.length){G.innerHTML='<div class="card score"><div class="n">'+gs+'/'+items.length+'</div><p>'+(gs>=8?"Hebat! Kamu paham sekali 🌟":"Ayo belajar lagi, kamu pasti bisa 💪")+'</p><button class="btn" onclick="gi=0;gs=0;game()">Main lagi</button></div>';return}
+var it=items[gi];ga=false;
+G.innerHTML='<div class="card"><div class="bar"><i style="width:'+gi/items.length*100+'%"></i></div><p style="margin:0;color:var(--mut)">Kartu '+(gi+1)+' dari '+items.length+' · Skor '+gs+'</p><div class="big"><span class="em">'+it[0].split(" ")[0]+'</span>'+it[0].slice(it[0].indexOf(" ")+1)+'</div><div class="row"><button class="btn h" onclick="pick(1)">✅ HALAL</button><button class="btn x" onclick="pick(0)">⛔ HARAM</button></div><div id="gf"></div></div>'}
+function pick(v){if(ga)return;ga=true;var it=items[gi],ok=v===it[1];if(ok)gs++;
+document.getElementById("gf").innerHTML='<div class="fb '+(ok?"ok":"no")+'"><b>'+(ok?"Benar! 🎉":"Belum tepat 🙏")+'</b> '+it[2]+'</div><button class="btn" style="margin-top:12px;width:100%" onclick="gi++;game()">Lanjut ➜</button>'}
+
+/* Kuis */
+var qs=[
+["Halal artinya ...",["Dilarang","Diperbolehkan","Makruh","Wajib"],1,"Halal berarti diperbolehkan menurut ajaran Islam."],
+["Berikut ini yang termasuk makanan haram adalah ...",["Ikan","Telur","Bangkai","Buah apel"],2,"Bangkai haram dimakan."],
+["Makanan yang baik, bersih, dan bergizi disebut ...",["Thayyib","Syubhat","Khamr","Haram"],0,"Thayyib berarti baik dan bersih."],
+["Minuman yang memabukkan disebut ...",["Sirup","Khamr","Susu","Madu"],1,"Khamr adalah minuman keras yang diharamkan."],
+["Sesuatu yang belum jelas halal atau haramnya disebut ...",["Mubah","Wajib","Syubhat","Sunnah"],2,"Syubhat perlu dihindari sampai jelas hukumnya."],
+["Roti dibeli dengan uang hasil mencuri. Hukumnya ...",["Halal","Haram karena cara memperolehnya","Sunnah","Mubah"],1,"Bendanya halal, tetapi cara mendapatkannya haram."],
+["Sebelum makan, kita sebaiknya membaca ...",["Hamdalah","Basmalah","Istighfar","Takbir"],1,"Membaca basmalah sebelum makan adalah adab yang baik."],
+["Cara mudah mengenali makanan kemasan yang halal adalah ...",["Melihat warna kemasan","Mencari logo halal resmi","Melihat harga","Melihat gambar"],1,"Periksa logo halal resmi di kemasan."]];
+var qi=0,qsc=0,qa=false,Q=document.getElementById("kuis");
+function kuis(){
+if(qi>=qs.length){Q.innerHTML='<div class="card score"><div class="n">'+Math.round(qsc/qs.length*100)+'</div><p>Benar '+qsc+' dari '+qs.length+' soal. '+(qsc>=6?"Luar biasa, Masya Allah! 🌟":"Yuk baca materinya lagi 📖")+'</p><button class="btn" onclick="qi=0;qsc=0;kuis()">Ulangi kuis</button></div>';return}
+var q=qs[qi];qa=false;
+var h='<div class="card"><div class="bar"><i style="width:'+qi/qs.length*100+'%"></i></div><p style="margin:0;color:var(--mut)">Soal '+(qi+1)+' dari '+qs.length+'</p><h3 style="margin:6px 0 12px">'+q[0]+'</h3>';
+q[1].forEach(function(o,i){h+='<button class="opt" onclick="ans('+i+',this)">'+"ABCD"[i]+'. '+o+'</button>'});
+Q.innerHTML=h+'<div id="qf"></div></div>'}
+function ans(i,el){if(qa)return;qa=true;var q=qs[qi],ok=i===q[2];if(ok)qsc++;
+var bs=Q.querySelectorAll(".opt");bs.forEach(function(b,k){b.disabled=true;if(k===q[2])b.classList.add("c")});if(!ok)el.classList.add("w");
+document.getElementById("qf").innerHTML='<div class="fb '+(ok?"ok":"no")+'"><b>'+(ok?"Benar! 🎉":"Kurang tepat.")+'</b> '+q[3]+'</div><button class="btn" style="margin-top:12px;width:100%" onclick="qi++;kuis()">'+(qi===qs.length-1?"Lihat hasil":"Lanjut ➜")+'</button>'}
+
+game();kuis();show("materi");
+</script>
+</body>
+</html>
